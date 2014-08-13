@@ -1,0 +1,14 @@
+[Unit]
+Description=uWSGI Emperor
+After=syslog.target
+
+[Service]
+ExecStart=/var/lib/simple-django-project/bin/uwsgi --ini /opt/example_provider/sdp/root/etc/simple-django-project/uwsgi/uwsgi.ini
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=main
+
+[Install]
+WantedBy=multi-user.target

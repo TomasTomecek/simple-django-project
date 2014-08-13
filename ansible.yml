@@ -1,0 +1,16 @@
+---
+- hosts: rhel7-sdp
+  remote_user: root
+  tasks:
+  - name: copy local rpms to remote
+    synchronize: src=rpms/ dest=/root/rpms/
+
+  - name: put list of rpms to variable rpms
+    action: command find /root/rpms -name "*.rpm"
+    register: rpms
+
+  - name: install rpms from variable rpms
+    action: 'command yum reinstall -y {{ rpms.stdout_lines | join(" ") }}'
+
+  - name: restart uwsgi
+    service: name=uwsgi state=restarted

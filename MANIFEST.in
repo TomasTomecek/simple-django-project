@@ -1,0 +1,6 @@
+include MANIFEST.in
+include README*
+
+recursive-include simple/main/templates *
+recursive-include simple *.py
+recursive-include simple/static *
