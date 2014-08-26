@@ -10,7 +10,7 @@ Summary:        Simple django 1.7 project deployed on RHEL 7 with RHSCL
 Group:          Development/Tools
 License:        GPLv2
 URL:            https://github.com/TomasTomecek/simple-django-project
-Source0:        https://github.com/TomasTomecek/simple-django-project/releases/%{pkg_name}-%{version}.tar.gz
+Source0:        https://github.com/TomasTomecek/simple-django-project/archive/%{pkg_name}-%{version}.tar.gz
 
 %{?scl:BuildRequires: %{scl}-build %{scl}-runtime}
 %{?scl:Requires: %{scl}-runtime}
