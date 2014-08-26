@@ -106,6 +106,12 @@ make
 Installation
 ============
 
+Don't forget to set you `/etc/ansible/hosts/`. This project is using machine `rhel7-sdp`. My hosts file looks like this:
+
+```
+rhel7-sdp ansible_ssh_user=root ansible_ssh_host=192.168.122.62
+```
+
 ```
 make deploy
 ```
