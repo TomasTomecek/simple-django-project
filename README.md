@@ -1,7 +1,7 @@
 simple-django-project
 =====================
 
-This is an example [django](http://djangoproject.com/) 1.7 project deployed with [Red Hat Software Collections](https://access.redhat.com/documentation/en-US/Red_Hat_Software_Collections/). The project was started for this blog post at [Red Hat's Developer Blog](https://developerblog.redhat.com).
+This is an example [django](http://djangoproject.com/) 1.7 project deployed with [Red Hat Software Collections](https://access.redhat.com/documentation/en-US/Red_Hat_Software_Collections/). The project was started for [this blog post](http://developerblog.redhat.com/2014/09/03/automated-deployment-rpm-packaged-django-applications-red-hat-software-collections/) at [Red Hat's Developer Blog](https://developerblog.redhat.com).
 
 *Read the blog post before trying anything. It covers server setup.*
 
